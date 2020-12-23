@@ -10,3 +10,4 @@ insert img
 
 การบันทึกไฟล์ Colab ไปยัง gihab
 1. เปิดไฟล์งานใน Colab แล้วเลือกไฟล์ จากนั้นกด บันทึกสำเนาในGitHab
+![README](![README](kkulog.jfif))
