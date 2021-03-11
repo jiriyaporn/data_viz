@@ -1,0 +1,204 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled9.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOOPLEnEIwKMv8Ot6lW1LSo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jiriyaporn/data_viz/blob/main/Quize3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ooI2Ghzu6XEF"
+      },
+      "source": [
+        "import pandas as pd"
+      ],
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 484
+        },
+        "id": "m5sEhONd6iPO",
+        "outputId": "eaaffdb7-a891-41b7-d928-c77bb0385295"
+      },
+      "source": [
+        "data_excel = pd.read_excel('-.57-.58-1.xls')\r\n",
+        "data_excel.head()"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Unnamed: 0</th>\n",
+              "      <th>Unnamed: 1</th>\n",
+              "      <th>Unnamed: 2</th>\n",
+              "      <th>Unnamed: 3</th>\n",
+              "      <th>Unnamed: 4</th>\n",
+              "      <th>Unnamed: 5</th>\n",
+              "      <th>Unnamed: 6</th>\n",
+              "      <th>Unnamed: 7</th>\n",
+              "      <th>แบบ สขร. 1</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>สรุปผลการดำเนินการจัดซื้อในรอบเดือน ตุลาคม 2557</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>สำนักงานปลัดกระทรวงวิทยาศาสตร์และเทคโนโลยี</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>ลำดับ</td>\n",
+              "      <td>งานจัดซื้อ</td>\n",
+              "      <td>วงเงินงบประมาณ</td>\n",
+              "      <td>วิธีซื้อ</td>\n",
+              "      <td>ผู้เสนอราคาและราคาที่เสนอ</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>ผู้ได้รับการคัดเลือกและราคา</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>เหตุผลที่คัดเลือกโดยสรุป</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>ที่</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>(ราคากลาง)</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "      <td>NaN</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "                                        Unnamed: 0  ...                แบบ สขร. 1\n",
+              "0  สรุปผลการดำเนินการจัดซื้อในรอบเดือน ตุลาคม 2557  ...                       NaN\n",
+              "1       สำนักงานปลัดกระทรวงวิทยาศาสตร์และเทคโนโลยี  ...                       NaN\n",
+              "2                                              NaN  ...                       NaN\n",
+              "3                                            ลำดับ  ...  เหตุผลที่คัดเลือกโดยสรุป\n",
+              "4                                              ที่  ...                       NaN\n",
+              "\n",
+              "[5 rows x 9 columns]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ojEtRqOg6iMX"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VPJ240_j6iIe"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cO1RSmX26h7e"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
